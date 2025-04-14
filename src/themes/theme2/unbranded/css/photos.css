@@ -1,0 +1,115 @@
+.logo-img {
+    height: 50px;
+}
+@media (max-width: 767px){
+    .logo-img {
+        height: 40px;
+        margin-top: .25rem!important;
+    }
+}
+.header-image{
+    background: none;
+    height: auto;
+}
+@media (max-width: 767px){
+#section-gallery-collection {
+    padding: 45px 0 60px 0 !important;
+}
+}
+#section-gallery-collection{
+    padding: 120px 0 60px 0;
+    text-align: center;
+}
+.fancybox-caption {
+    top: 81% !important;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.fancybox-inner{
+    font-family: 'Gotham Light' !important;
+}
+
+.fancybox-caption::after {
+    border: 0 !important;
+}
+.gallerycol-backbtn {
+    background-color: #000000 !important;
+    color: #ffffff;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: 18px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.gallerycol-backbtn:hover{
+    background-color: #ffffff !important;
+    color:#000000 !important;
+}
+#section-gallery-collection {
+    background-color: #fff;
+    min-height: 800px;
+    padding: 120px 0 60px 0;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+}
+#section-gallery-collection .gallerycol-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#section-gallery-collection .gallerycol-list ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+}
+#section-gallery-collection .gallerycol-list ul li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+#section-gallery-collection .gallerycol-list ul li img {
+    display: inline;
+    border: 1px solid #bdbdbd;
+    width: 300px;
+    height: 200px;
+    transition: all .2s ease-in-out;
+    object-fit: cover;
+}
+
+#section-gallery-collection .gallerycol-list ul li img:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+    -moz-box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+    box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+}
+#section-gallery-collection .gallerycol-list ul li .pdf{
+    display: inline-block;
+    border: 1px solid #bdbdbd;
+    width: 300px;
+    height: 200px;
+    transition: all .2s ease-in-out;
+    overflow: hidden !important;
+    vertical-align: middle;
+    padding: 25% 10%;
+    color: #000000;
+    overflow-wrap: break-word;
+}
+#section-gallery-collection .gallerycol-list ul li .pdf:hover{
+     transform: scale(1.1);
+     -webkit-box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+     -moz-box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+     box-shadow: 0px 0px 35px -9px rgba(201,37,40,0.8);
+ }
+@media (min-width: 1250px) {
+    .logo_div{
+        margin-top: 15px;
+    }
+}
+
+.fancybox-bg{
+    background: #000000 !important;
+    opacity: 1 !important;
+}

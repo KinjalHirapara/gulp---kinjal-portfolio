@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Luxury Theme</title>
+    <link rel="stylesheet" href="vendor/bootstrapvalidator/bootstrapvalidator.min.css">
+    <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/lightslider/dist/css/lightslider.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="vendor/header-slider/subtle-slideshow.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+    <link href="vendor/youtube-video/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="header" id="home">
+        <!-- single image set inside style background image -->
+        <div class="bg-header shadow-inner" style="background-image:none">
+            <div class="tv">
+                <div class="dark-bg">
+                    <div class="d-none h-100 spinner-sec">
+                        <span class="m-auto loading-spinner"><i class="fas fa-spinner fa-pulse text-white fa-5x"></i></span>
+                    </div>
+                </div>
+                <div class="screen mute active d-none" id="tv">
+                    <iframe class="bg-iframe" id="vimeo-fullscreen" width="100%" height="100%" src="https://player.vimeo.com/video/458098734?autoplay=0&badge=0&loop=1&title=0&player_id=vimeo-fullscreen&muted=1;controls=0;background=1" frameborder="0" allow="autoplay" webkitallowfullscreen=""
+                        mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+
+                    <!-- <div data-youtube-id="https://www.youtube.com/watch?v=9em32dDnTck"id="player-control"></div> -->
+                </div>
+            </div>
+            <!--set slide show images -->
+            <div class="d-none multiple-images">
+                <div id="slides">
+                    <a class="slide" title="Yoga Image | unsplash" href="#">
+                        <span class="animate out" style="background-image: url('assets/gallery_image_1016_4_1533001521.jpg')"></span>
+                    </a>
+                    <a class="slide" title="Fitness Image | unsplash" href="#">
+                        <span class="animate in" style="background-image: url('assets/gallery_image_1059_4_1533002249.jpg')"></span>
+
+                    </a>
+                    <a class="slide" title="GYM Image | unsplash" href="#">
+                        <span class="animate out" style="background-image: url('assets/gallery_image_1082_4_1533001504.jpg')"></span>
+
+                    </a>
+                    <a class="slide" title="Cat Image | unsplash" href="#">
+                        <span class="animate in" style="background-image: url('assets/gallery_image_1016_4_1533001521.jpg')"></span>
+
+                    </a>
+                    <a class="slide" title="Dog | unsplash" href="#">
+                        <span class="animate out" style="background-image: url('assets/gallery_image_1059_4_1533002249.jpg')"></span>
+
+                    </a>
+                </div>
+                <!-- <div id="slideshow">
+                    <img src="assets/header.jpg"alt="">
+                    <img src="assets/gallery_section.jpg"alt="">
+                    <img src="assets/gallery_image_1016_4_1533001521.jpg"alt="">
+                    <img src="assets/gallery_image_1581_4_1533001831.jpg"alt="">
+                </div> -->
+            </div>
+
+            <div class="d-block">
+                <nav class="navbar navbar-light fixed-top top-bar-shadow">
+                    <div class="navbar-brand">
+                        <a href="javascript:void(0)">
+                            <img class="header-logo" src="assets/logosample.jpg" alt="logo">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="header-logo" src="assets/sq.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="text-center text-color ml-auto mr-3 my-auto d-none d-sm-block">
+                        <span class="agent-name">Jen Stone 510.234.5676</span>
+                        <span class="mx-2 agent-name">|</span>
+                        <span class="agent-name">John Paul 676.345.6789</span>
+                    </div>
+                    <button class="sidebar-collapse btn p-2 px-3 btn-outline-light sidebar-conflict">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="w-100 d-block d-sm-none">
+                        <div class="d-flex flex-wrap flex-lg-nowrap mt-2">
+                            <div class="flex-grow-1 text-right text-color my-auto">
+                                <div class="agent-name">Jen Stone 510.234.5676</div>
+                                <div class="agent-name">John Paul 676.345.6789</div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="sidebar">
+                <div>
+                    <div class="sidebar-collapse-button text-right">
+                        <button class="sidebar-collapse btn p-2 px-3 btn-outline-light">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                    <div id="scrollbar">
+                        <div class="sidebar-nav-wrapper" id="sidebar-nav">
+                            <ul class="sidebar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#video">Video</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#3dvideo">3D Tour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#document">Document</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#location">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#floor_plan">Floor Plan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#schedule">Schedule</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="d-flex mx-3 mx-lg-5 pb-3 property-details">
+                    <div class="flex-grow-1 text-color mt-auto mr-2">
+                        <h4 class="mb-1">Featured listing in marin country</h4>
+                        <h1 class="mb-1">160 Arlington Avenue</h1>
+                        <h4 class="mb-1">Kensington CA</h4>
+                    </div>
+                    <div class="flex-shrink-0 text-right text-color mt-auto">
+                        <h4 class="mb-1 text-uppercase">5 Beds</h4>
+                        <h4 class="mb-1 text-uppercase">3F 1h baths</h4>
+                        <h4 class="mb-1 text-uppercase">2,456 sqft
+                            <span class="plus-minus">&plusmn;</span>
+                        </h4>
+                        <h4 class="mb-1 text-uppercase">$2,340,000</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="secgallery"></div>
+    <div id="gallery" class="gallary">
+        <div class="d-flex flex-wrap flex-lg-nowrap">
+            <div class="flex-lg-fill w-100">
+                <div class="gallery-list">
+                    <div class="image-gallerybg" style="background-image: url( 'assets/gallery_section.jpg');">
+                        <div class="d-flex h-100 p-4">
+                            <div class="m-auto">
+                                <h2 class="section-name mb-4 mt-n3 text-center gallery-name">Cozy House</h2>
+                                <div class="text-center mt-1">
+                                    <a class="d-inline-block" href="album1.html">
+                                        <span class="text-center see-more-gallary text-color">See More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-lg-fill w-100">
+                <div class="gallery-list">
+                    <div class="image-gallerybg" style="background-image: url( 'assets/house6.jpg');">
+                        <div class="d-flex h-100 p-4">
+                            <div class="m-auto">
+                                <h2 class="section-name mb-4 mt-n3 text-center gallery-name">Great Neighborhood</h2>
+                                <div class="text-center mt-1">
+                                    <a class="d-inline-block" href="album2.html">
+                                        <span class="text-center see-more-gallary text-color">See More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="features">
+        <!-- set inner background color -->
+        <div class="d-none color-text-features" style="background-color: #999999;"></div>
+        <!-- set outer background color -->
+
+        <div class="features-bg p-lg-5 p-3" style="background-color: #002349;">
+            <!-- if video is not there then add below style with inner color -->
+            <!-- style="background: #212121;"-->
+
+            <div class="row mx-0 py-3 pl-sm-5 py-sm-5 pr-0 video-section-bg">
+                <!-- if video is not there then add  col-12 class and remove col-lg-9 col-sm-8 pr-3 pr-sm-5  -->
+                <div class="col-lg-9 col-sm-8 pr-3 pr-sm-5 features-section">
+                    <h2 class="section-name mb-4 features-name">Features</h2>
+                    <div class="features-discription pr-3">
+                        <p>
+                        </p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">The best of Silicon Valley living is at your fingertips within this impeccably remodeled home. Nestled in a low-key setting just moments from shopping, dining, schools, and work, the residence affords effortless, modern living
+                            with a stylish twist.</p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">Entertaining has never been easier thanks to the home’s ingenious redesign. Open, flexible gathering spaces and a knock-out chef’s kitchen create warmth, elegance, and efficiency. The private pool retreat offers an outdoor kitchen,
+                            overlooked by an expansive upper-level deck perfect for parties.</p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">Also showcased are gorgeously appointed bedrooms, a plethora of designer fixtures, and high-tech details for easy connectivity. In addition, you can quickly reach nearby schools, walk to cafes and outdoor recreation, or bike to
+                            shopping, medical centers, and neighboring employers like Apple. Prepare to be swept off your feet by this beauty!</p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">&nbsp;</p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">
+                                    <em style="outline: none;">5 Bedrooms</em>
+                                </span>
+                        </p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">
+                                    <em style="outline: none;">4 Bathrooms&nbsp;</em>
+                                </span>
+                            <span class="d-inline-block features-cut"></span></p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">
+                                    <em style="outline: none;">2,673 Sq. Ft. House</em>
+                                </span>
+                        </p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">
+                                    <em style="outline: none;">8,000 Sq. Ft. Lot</em>
+                                </span>
+                        </p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">&nbsp;</p>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">THE HOME</span>
+                        </p>
+                        <ul style="outline: none; margin-bottom: 10px; font-family: ptsansRegular; font-size: 16px;">
+                            <li style="outline: none;">Boasting a thorough and meticulous redesign, this breathtaking home grants an unparalleled combination of accessibility, versatility, and style</li>
+                            <li style="outline: none;">Extensive crown molding, beamed ceiling treatments, and upgrades that include fashionable flooring, designer fixtures, hanging doors, and chic paint colors deliver high-impact style</li>
+                            <li style="outline: none;">Lighting by Legrand and Lutron, Nest climate control, and Wink connectivity add cutting-edge convenience</li>
+                            <li style="outline: none;">Free-flowing, flexibly designed living, dining, and family areas adjoin the island kitchen, excellent for entertaining</li>
+                            <li style="outline: none;">Jaw-dropping kitchen features include glamorous quartz countertops with waterfall edges, custom soft-close cabinetry, a wine cooler, and high-end amenities like Jenn-Air refrigeration and a Thermador oven range with pot-filler
+                            </li>
+                            <li style="outline: none;">
+                                Well-appointed bedrooms include a versatile home office with private entrance, junior master suite with dual showers, and sprawling master retreat displaying a sitting room, his-and-her closets, and dreamy bathroom with rainfall shower and freestanding
+                                tub
+                            </li>
+                            <li style="outline: none;">French doors open to a private swimming pool and outdoor kitchen surrounded by new, low-maintenance landscaping, while an expansive upper-level deck is ideal for outdoor gatherings overlooking the pool</li>
+                        </ul>
+                        <p style="outline: none; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-family: ptsansRegular; font-size: 16px;">
+                            <span style="outline: none; font-weight: 700;">THE LOCATION</span>
+                        </p>
+                        <ul style="outline: none; margin-bottom: 10px; font-family: ptsansRegular; font-size: 16px;">
+                            <li style="outline: none;">This home’s low-key but highly desirable setting is just moments from shopping, dining, schools, and work</li>
+                            <li style="outline: none;">Walk or quickly bike to Laurelwood Elementary and Peterson Middle, and enjoy easy access to Wilcox High (buyer to verify)</li>
+                        </ul>
+                        <p></p>
+                    </div>
+
+                    <div id="document" class="mt-5 mb-5 mb-sm-0 text-center text-sm-left">
+                        <div class="d-inline-block">
+                            <div id="open_doc" class="d-flex document-download">
+                                <h2 class="mb-0">
+                                    <span class="update-doc-color"><i class="far fa-file-alt"></i></span>
+                                </h2>
+                                <p class="update-doc-color my-auto mx-3">View Documents</p>
+                            </div>
+                            <div class="sidenav-left" style="background-image: url(assets/gallery_image_1082_4_1533001504.jpg)">
+                            </div>
+                            <div class="sidenav-right">
+                                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                                <div class="ml-4 text-left">
+                                    <h2 class="text-white">Documents</h2>
+                                    <a class="open-document-viewer" target="_blank" data-href="assets/floorplan-final.pdf" href="javascript:void(0);">
+                                        <div class="mt-5">
+                                            <p class="text-white"><i class='fas fa-file-alt mr-3'></i>123 street sheet 578573985</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 my-auto all-videos">
+                    <div id="video"></div>
+                    <div class="py-2"></div>
+                    <div class="videos-section">
+                        <div class="htmlDiv">
+                            <iframe src="https://player.vimeo.com/video/426072906" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+                            <div class="overlap" data-fancybox data-type="iframe" data-src="https://player.vimeo.com/video/426072906?autoplay=1&muted=0&player_id=vimeo-fullscreen" allow=autoplay></div>
+                        </div>
+                    </div>
+                    <div class="py-2"></div>
+                    <div class="py-2"></div>
+                    <div class="videos-section">
+                        <div class="htmlDiv">
+                            <iframe src="https://my.matterport.com/show/?m=Cke7bv6NfxE" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+                            <div class="overlap" data-fancybox data-type="iframe" data-src="https://my.matterport.com/show/?m=Cke7bv6NfxE&play=1"></div>
+                        </div>
+                    </div>
+                    <div class="py-2"></div>
+
+                    <div id="3dvideo"> </div>
+                    <div class="py-2"></div>
+                    <div class="videos-section">
+                        <div class="htmlDiv">
+                            <iframe src="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+                            <div class="overlap" data-fancybox data-type="iframe" data-src="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1"></div>
+                        </div>
+                    </div>
+                    <div class="py-2"></div>
+                    <div class="py-2"></div>
+                    <div class="videos-section">
+                        <div class="htmlDiv">
+                            <iframe src="https://my.matterport.com/show/?m=Cke7bv6NfxE" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+                            <div class="overlap" data-fancybox data-type="iframe" data-src="https://my.matterport.com/show/?m=Cke7bv6NfxE&play=1"></div>
+                        </div>
+                    </div>
+                    <div class="py-2"></div>
+
+                </div>
+            </div>
+
+            <!-- remove class d-none when location does not shown on site. -->
+            <!-- <div class="document-section-bg text-center p-5"style="background-color: #999999;">
+                <div class="text-center d-inline-block">
+                    <div id="open_doc"class="d-flex document-download">
+                        <h2 class="mb-0">
+                            <span class="update-doc-color"><i class="far fa-file-alt"></i></span>
+                        </h2>
+                        <p class="update-doc-color my-auto mx-3">View Documents</p>
+                    </div>
+                    <div class="sidenav-left"style="background-image: url(assets/gallery_image_1082_4_1533001504.jpg)">
+                    </div>
+                    <div class="sidenav-right">
+                        <a href="javascript:void(0)"class="closebtn">&times;</a>
+                        <div class="ml-4 text-left">
+                            <h2 class="text-white">Documents</h2>
+                            <a class="open-document-viewer"target="_blank"data-href="assets/floorplan-final.pdf"href="javascript:void(0);">
+                                <div class="mt-5">
+                                    <p class="text-white"><i class='fas fa-file-alt mr-3'></i>123 street sheet 578573985</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div id="location" class="location mt-5">
+                <div class="location-title mb-4">
+                    <h2 class="section-name text-center">Location</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-lg-4"></div>
+                    <div class="col-sm-6 col-lg-4 px-sm-0 mb-5 mb-lg-0">
+                        <a target="_blank" class="text-white" href="https://www.google.com/maps/search/?api=1&query=160 Arlington Avenue, Kensington CA">
+                            <div class="overlap map-external-link">
+                                <div class="d-flex h-100">
+                                    <div class="show-full-map w-50 my-auto p-2 text-center">
+                                        <div class="text-white">160 Arlington Avenue</div>
+                                        <div class="font-weight-bold text-white">Kensington CA</div>
+                                        <div class="mt-2">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="map" class="mx-auto text-center map-section"></div>
+                        <script>
+                            function initMap() {
+                                var longitude = null;
+                                var latitude = null;
+                                var zoom = null;
+                                var isDefaultLocationSet = false;
+                                if (longitude == null && latitude == null) {
+                                    longitude = -74.0060;
+                                    latitude = 40.7128;
+                                    zoom = 4;
+                                    isDefaultLocationSet = true;
+                                } else {
+                                    zoom
+                                        = 12;
+                                }
+                                longitude = parseFloat(longitude);
+                                latitude = parseFloat(latitude);
+                                var uluru = {
+                                    lat: latitude,
+                                    lng: longitude
+                                };
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: zoom,
+                                    center: uluru
+                                });
+                                if (isDefaultLocationSet) {
+                                    var marker = new google.maps.Marker({
+                                        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                                        map: map
+                                    });
+                                } else {
+                                    var marker = new google.maps.Marker({
+                                        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                                        position: uluru,
+                                        map: map
+                                    });
+                                }
+                            }
+                        </script>
+                        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPavdcCy2wVVXlK-0cuzb-7PRTTnNFIF0&sensor=false&ver=1&language=en-US&callback=initMap"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="floor_plan" class="floor-plan">
+        <div class="floorplan-title my-5">
+            <h2 class="section-name mb-4 text-center">Floor Plan</h2>
+        </div>
+        <!-- <div class="mx-3 mb-5 pb-5 px-3 mx-md-5 px-md-5 floor-plan-1">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="floor-plan-images"data-fancybox="floor-plan-gallary"data-src="assets/floorplan3.gif"style="background-image: url(assets/floorplan3.gif);">
+                    </div>
+                    <div class="floor-plan-pdf">
+                        <div class="overlap"data-fancybox="floor-plan-gallary"data-src="assets/floorplan-final.pdf"></div>
+                        <iframe src="assets/floorplan-final.pdf"type="application/pdf"frameBorder="0"scrolling="hide"height="350px"width="100%">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="mx-3 mb-5 pb-5 px-3 mx-md-5 px-md-5 floor-plan-1">
+            <ul id="light-slider">
+                <li class="border-black-plan">
+                    <div class="floor-plan-images" data-fancybox="floor-plan-gallary" data-caption="Demo Title for Image" data-src="assets/floorplan3.gif" style="background-image: url(assets/floorplan3.gif);">
+                    </div>
+                </li>
+                <li class="border-black-plan">
+                    <div class="floor-plan-pdf">
+                        <div class="overlap" data-fancybox="floor-plan-gallary" data-caption="Demo Title for Image" data-src="assets/floorplan-final.pdf"></div>
+                        <iframe src="assets/floorplan-final.pdf" type="application/pdf" frameBorder="0" scrolling="hide" height="350px" width="100%">
+                            </iframe>
+                    </div>
+                </li>
+                <li class="border-black-plan">
+                    <div class="floor-plan-pdf">
+                        <div class="overlap" data-fancybox="floor-plan-gallary" data-caption="Demo Title for Image" data-src="assets/floorplan_1.pdf"></div>
+                        <iframe src="assets/floorplan_1.pdf" type="application/pdf" frameBorder="0" scrolling="hide" height="350px" width="100%">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="border-black-plan">
+                    <div class="floor-plan-images" data-fancybox="floor-plan-gallary" data-caption="Demo Title for Image" data-src="assets/floorplan1.jpg" style="background-image: url(assets/floorplan1.jpg);">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="schedule" class="schedule">
+        <div class="bg-schedule" style="background-image: url( 'assets/gallery_section.jpg');">
+            <div class="row mx-0">
+                <div class="col-lg-8 offset-lg-2 my-5 px-0">
+                    <div class="d-flex">
+                        <div class="flex-fill my-auto mr-3">
+                            <div class="schedule-line">
+                            </div>
+                        </div>
+                        <h2 class="section-name mb-0 text-center schedule-title">
+                            <span>Schedule</span>
+                        </h2>
+                        <div class="flex-fill my-auto ml-3">
+                            <div class="schedule-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-3 p-lg-0 mx-0">
+                <div class="col-lg-8 col-md-10 offset-md-1 offset-lg-2">
+                    <div class="row">
+                        <!--if  live online showing not there then add class col-12 and remove class col-lg-6 col-sm-6 -->
+                        <div class="col-lg-6 col-sm-6 showing-section text-center text-sm-left pl-4 py-4">
+                            <div class="text-center">
+                                <h3 class="">Showing</h3>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <span class="font-weight-bold">
+                                    Showing will be strictly enforcing social distancing rules.
+                                </span>
+                                <div class="d-flex flex-column flex-lg-row justify-content-center">
+                                    <div class="mx-0 mx-lg-2"><a class="policy-link" href="javascript:void(0)">Showing Policy</a></div>
+                                    <div class="mx-0 mx-lg-2"><a class="policy-link" href="javascript:void(0)">Appointment calendar</a></div>
+                                </div>
+                            </div>
+                            <!-- if Showing and live online showing are added shown below section -->
+                            <div class="dates-section mt-4 Showing-date-section">
+                                <div class="dates-times mb-3">
+                                    <h5 class="dates">Sunday, August 23</h5>
+                                    <p class="times">2:00 AM - 5:00 AM</p>
+                                </div>
+                                <div class="dates-times mb-3">
+                                    <h5 class="dates">Monday, Septmber 01</h5>
+                                    <p class="times">1:00 PM - 3:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3">
+                                    <h5 class="dates">Sunday, October 05</h5>
+                                    <p class="times">5:00 AM - 7:00 AM</p>
+                                </div>
+                                <div class="dates-times mb-3">
+                                    <h5 class="dates">Tuesday, August 03</h5>
+                                    <p class="times">1:00 PM - 3:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                            </div>
+                            <!-- if only Showing is there shown below section -->
+                            <!-- <div class="d-flex flex-wrap justify-content-center mt-4 single-showing-section Showing-date-section">
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Sunday, August 23</h5>
+                                    <p class="times">2:00 AM- 5:00 AM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Monday, Septmber 01</h5>
+                                    <p class="times">1:00 PM - 3:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Sunday, October 05</h5>
+                                    <p class="times">5:00 AM - 7:00 AM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Tuesday, August 03</h5>
+                                    <p class="times">1:00 PM - 3:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <h5 class="dates">Friday, August 23 (Broker Tour)</h5>
+                                    <p class="times">1:00 PM - 5:00 PM</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!--if  showing not there then add class col-12 and remove class col-lg-6 col-sm-6 -->
+                        <div class="col-lg-6 col-sm-6 online-showing-section text-center text-sm-left pr-4 py-4">
+                            <div class="text-center mt-1">
+                                <img class="zoom-logo" src="assets/zoom_logo.png" alt="zoom logo">
+                                <img class="zoom-logo" src="assets/zoom_logo2.png" alt="zoom logo">
+                            </div>
+                            <div class="mt-3 text-center">
+                                <span class="font-weight-bold">
+                                    Online showing is when you join from comfort of your home.
+                                </span>
+                            </div>
+                            <!-- if Showing and live online showing are added shown below section -->
+                            <div class="dates-section mt-4 online-Showing-date-section">
+                                <div class="dates-times mb-3">
+                                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                                        <div class="flex-grow-1">
+                                            <h5 class="dates">Tuesday, August 03</h5>
+                                            <p class="times mb-2">11:00 AM - 1:00 PM</p>
+                                            <div class="mb-3">
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Meeting ID: </span>
+                                                    <span class="ml-2 copy-text mr-4">343 6456 5455</span>
+                                                    <a class="text-dark copy-btn ml-4" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy Meeting Id">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Password: </span>
+                                                    <span class="ml-2 copy-text mr-4">fddfre</span>
+                                                    <a class="text-dark copy-btn ml-4" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy Password">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto flex-fill flex-shrink-0 mr-sm-3 text-center text-sm-right ml-3">
+                                            <button class="btn btn-dark join-btn mb-3 mb-m-0" data-toggle="modal" data-target="#zoom_register_modal">
+                                                <i class="fas fa-user-plus"></i>JOIN
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dates-times mb-3">
+                                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                                        <div class="flex-grow-1">
+                                            <h5 class="dates">Monday, August 23 (Broker Tour)</h5>
+                                            <p class="times mb-2">6:00 AM- 7:00 AM</p>
+                                            <div class="mb-3">
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Meeting Id: </span>
+                                                    <span class="ml-2 copy-text mr-4">750 9163 9001</span>
+                                                    <a class="text-dark copy-btn ml-4" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy Meeting Id">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Password: </span>
+                                                    <span class="ml-2 copy-text mr-4">bX8zhD</span>
+                                                    <a class="text-dark copy-btn ml-4" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy Password">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto flex-fill flex-shrink-0 mr-sm-3 text-center text-sm-right ml-3">
+                                            <button class="btn btn-dark join-btn mb-3 mb-m-0" data-toggle="modal" data-target="#zoom_register_modal">
+                                                <i class="fas fa-user-plus"></i>JOIN
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- if only Online showing  is there shown below section -->
+                            <!-- <div class="d-flex flex-wrap justify-content-center mt-4 single-showing-section online-Showing-date-section">
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                                        <div class="flex-grow-1">
+                                            <h5 class="dates">Tuesday, August 03</h5>
+                                            <p class="times mb-2">12:00 PM - 2:00 PM</p>
+                                            <div class="mb-3">
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Meeting Id: </span>
+                                                    <span class="ml-2 copy-text mr-4">343 6456 5455</span>
+                                                 <a class="text-dark copy-btn ml-4"href="javascript:void(0)"data-toggle="tooltip"data-placement="top"title="Copy Meeting Id">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Password: </span>
+                                                    <span class="ml-2 copy-text mr-4">fddfre</span>
+                                                    <a class="text-dark copy-btn ml-4"href="javascript:void(0)"data-toggle="tooltip"data-placement="top"title="Copy Password">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto flex-fill flex-shrink-0 mr-sm-3 text-center text-sm-right ml-3">
+                                            <button class="btn btn-dark join-btn mb-3 mb-m-0"data-toggle="modal"data-target="#zoom_register_modal">
+                                                <i class="fas fa-user-plus"></i>JOIN
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dates-times mb-3 mx-2 text-center">
+                                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                                        <div class="flex-grow-1">
+                                            <h5 class="dates">Monday, August 23 (Broker Tour)</h5>
+                                            <p class="times mb-2">6:00 AM - 7:00 AM</p>
+                                            <div class="mb-3">
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Meeting Id: </span>
+                                                    <span class="ml-2 copy-text mr-4">750 9163 9001</span>
+                                                    <a class="text-dark copy-btn ml-4"href="javascript:void(0)"data-toggle="tooltip"data-placement="top"title="Copy Meeting Id">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                                <p class="mb-0">
+                                                    <span class="font-weight-bold">Password: </span>
+                                                    <span class="ml-2 copy-text mr-4">bX8zhD</span>
+                                                    <a class="text-dark copy-btn ml-4"href="javascript:void(0)"data-toggle="tooltip"data-placement="top"title="Copy Password">
+                                                        <i class="fas fa-copy"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="my-auto flex-fill flex-shrink-0 mr-3 text-center text-sm-right ml-3">
+                                            <button class="btn btn-dark join-btn mb-3 mb-m-0"data-toggle="modal"data-target="#zoom_register_modal">
+                                                <i class="fas fa-user-plus"></i>JOIN
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="mt-4 zoom-section-guideline">
+                                <span class="text-muted">To register for a future event or to join, please click JOIN.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="bg-contact" style="background-image: url( 'assets/gallery_section.jpg');">
+            <div class="container pt-5 pb-5">
+                <div class="pt-0 pt-lg-5">
+                    <h3 class="text-white mb-4">Listing presented by</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row p-3 bg-agents mx-0">
+                            <div class="col-12 col-sm-4 pl-sm-0">
+                                <div class="bg-dark">
+                                    <img class="agent-img" width="100%" src="assets/agent_two.jpg" alt="agents">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8 px-sm-0 mt-4 mt-sm-0">
+                                <div class="d-flex">
+                                    <div class="flex-fill text-center text-sm-left">
+                                        <h5 class="text-white mb-0 name-agent">Jen Stone</h5>
+                                        <img class="agent-logo" src="assets/logosample.jpg" alt="logo">
+                                        <p class="mb-0 agent-info agent-number">510.234.5676</p>
+                                        <p class="mb-0 agent-info agent-email">kelly.stober@compass.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row mb-2">
+                                    <div class="flex-grow-1 text-center text-sm-left mr-2 text-break">
+
+                                        <p class="mb-0 agent-info agent-dre">DRE #1234455</p>
+                                    </div>
+                                    <div class="flex-shrink-0 mx-auto mt-auto mb-1 text-center text-sm-left">
+                                        <div class="d-inline-block mt-2 mt-sm-0">
+                                            <a href="javacsript:void(0)" class="agen-details" data-toggle="modal" data-target="#agent-modal">
+                                                <div class="about-agent text-white">About The Agent</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pt-2 social-section">
+                                    <div class="flex-grow-1 my-auto">
+                                        <p class="text-white mb-0">
+                                            <a href="javascript:void(0);" class="agent-website">Visit my website </a>
+                                            <span class="px-2 text-white-50">|</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0 my-auto">
+                                        <a class="agent-facebook" href="javascript:void(0);">
+                                            <img src="assets/facebook.png" alt="facebook icon">
+                                        </a>
+                                        <a class="agent-instagram" href="javascript:void(0);">
+                                            <img class="mx-2" src="assets/instagram.png" alt="instagram icon">
+                                        </a>
+                                        <a class="agent-linkedin" href="javascript:void(0);">
+                                            <img class="linked-in agent-linkedin" src="assets/linkedin.png" alt="linkedin icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none discreption-agent">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="row p-3 bg-agents mx-0">
+                            <div class="col-12 col-sm-4 pl-sm-0">
+                                <div>
+                                    <img class="agent-img" width="100%" src="assets/agent.jpg" alt="agents">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8 px-sm-0 mt-4 mt-sm-0">
+                                <div class="d-flex">
+                                    <div class="flex-fill text-center text-sm-left">
+                                        <h5 class="text-white mb-0 name-agent">John Paul</h5>
+                                        <img class="agent-logo" src="assets/sq.png" alt="logo">
+                                        <p class="mb-0 agent-info agent-number">676.345.6789</p>
+                                        <p class="mb-0 agent-info agent-email">john@paul.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row mb-2">
+                                    <div class="flex-grow-1 text-center text-sm-left mr-2 text-break">
+
+                                        <p class="mb-0 agent-info agent-dre">DRE #5464564</p>
+                                    </div>
+                                    <div class="flex-shrink-0 mx-auto mt-auto mb-1 text-center text-sm-left">
+                                        <div class="d-inline-block mt-2 mt-sm-0">
+                                            <a href="javacsript:void(0)" class="agen-details" data-toggle="modal" data-target="#agent-modal">
+                                                <div class="about-agent text-white">About The Agent</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pt-2 social-section">
+                                    <div class="flex-grow-1 my-auto">
+                                        <p class="text-white mb-0">
+                                            <a href="javascript:void(0);" class="agent-website">Visit my website </a>
+                                            <span class="px-2 text-white-50">|</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0 my-auto">
+                                        <a class="agent-facebook mr-1" href="javascript:void(0);">
+                                            <img src="assets/facebook.png" alt="facebook icon">
+                                        </a>
+                                        <a class="agent-instagram mx-1" href="javascript:void(0);">
+                                            <img class="" src="assets/instagram.png" alt="instagram icon">
+                                        </a>
+                                        <a class="agent-linkedin ml-1" href="javascript:void(0);">
+                                            <img class="linked-in" src="assets/linkedin.png" alt="linkedin icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none discreption-agent">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-contact-form p-4">
+                            <div class="d-flex contact-header">
+                                <h3 class="text-white flex-grow-1 mb-0">Contact</h3>
+                                <div class="social-icons my-auto">
+                                    <span class="text-white mr-2">
+                                        Share
+                                    </span>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/facebook.png" alt="facebook icon">
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <img class="twitter mx-2" src="assets/twitter.png" alt="twitter icon">
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <img class="linked-in" src="assets/linkedin.png" alt="linkedin icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <form id="contact-form" action="javascript:void(0)">
+                                    <div class="form-group mt-2 d-none">
+                                        <div class="alert alert-danger">
+                                            Please Enter a Valid Email Address
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2 d-none">
+                                        <div class="alert alert-success">
+                                            Thank you for your inquiry. We will get back to you right away!
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="addressID">
+                                    <div class="form-group">
+                                        <label for="fname" class="text-white-50">Name*</label>
+                                        <input id="fname" class="form-control transparent-input" name="fname" type="text" autocomplete="off">
+                                    </div>
+                                    <div class="row mx-0">
+                                        <div class="col-sm-6 px-0">
+                                            <div class="form-group mr-sm-2">
+                                                <label for="phone" class="text-white-50">Phone Number*</label>
+                                                <input id="phone" class="form-control transparent-input" name="phone" type="text" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 px-0">
+                                            <div class="form-group ml-sm-2">
+                                                <label for="email" class="text-white-50">Email*</label>
+                                                <input id="email" class="form-control transparent-input" name="email" type="email" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message" class="text-white-50">Message*</label>
+                                        <textarea id="message" class="form-control transparent-input resize-none" rows="3" name="message"></textarea>
+                                    </div>
+                                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                                        <div class="flex-grow-1 mt-4">
+                                            <div class="g-recaptcha" name="fCapcha" data-theme="dark" data-sitekey="6LcVaUUUAAAAABxeHdyFVhUc1MImEZJz-S7C6CAM"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 flex-fill my-sm-auto mt-3 text-center text-sm-right">
+                                            <button class="btn_submit btn-submit btn btn-dark"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4 bg-footer">
+        <div class="container mt-3">
+            <div class="d-flex flex-column flex-md-row pt-3 footer-section">
+                <div class="flex-shrink-0 mr-0 mr-md-4">
+                    <a href="javascript:void(0);">
+                        <img class="footer-logo" src="assets/circlevision_logo.png" alt="circlevision_logo">
+                    </a>
+                    <div class="text-white-50 mx-2 mx-md-4 footer-text d-inline-block float-right">
+                        © 2020 Circle Visions, Inc. <br>All Rights Reserved.
+                    </div>
+                </div>
+                <div class="text-white-50 text-md-right footer-text text-center mt-3 mt-md-0">
+                    Disclaimer: All material presented herein is intended for informational purposes only and is compiled from sources deemed reliable but has not been verified. Changes in price, condition, sale or withdrawal may be made without notice. No statement is made
+                    as to accuracy of any description. All measurements and square footage are approximate.
+                </div>
+            </div>
+        </div>
+        <a id="backTop" class="back-to-top">Back To Top</a>
+    </footer>
+
+    <!-- modal section -->
+    <div class="modal fade" id="agent-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header p-0 agent-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body agent-body pt-0">
+                    <div class="row px-2 px-md-3">
+                        <div class="col-sm-4">
+                            <img width="100%" class="show-agent-img" src="assets/agent_two.jpg" alt="agent logo">
+                            <div class="mt-4 text-center text-sm-left">
+                                <h5 class="font-weight-bold text-dark show-agent-name"></h5>
+                                <img class="agent-logo mb-2 show-agent-logo" src="assets/logosample.jpg" alt="logo">
+                                <p class="mb-1 text-dark show-agent-number"></p>
+                                <p class="mb-1 text-dark show-agent-email"></p>
+                                <p class="mb-1 text-dark show-agent-dre"></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="agent-discription show-agent-discription">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center text-sm-right my-3">
+                        <a class="show-agent-facebook mr-1" href="javascript:void(0);">
+                            <img src="assets/facebook.png" alt="facebook icon">
+                        </a>
+                        <a class="show-agent-instagram mx-1" href="javascript:void(0);">
+                            <img src="assets/instagram.png" alt="instagram icon">
+                        </a>
+                        <a class="show-agent-linkedin ml-1" href="javascript:void(0);">
+                            <img class="linked-in" src="assets/linkedin.png" alt="linkedin icon">
+                        </a>
+                        <a class="btn btn-dark visit-my-website-btn mx-2 ml-sm-4 show-agent-website" href="javascript:void(0)">Visit My Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- zoom register modal -->
+    <div class="modal fade" id="zoom_register_modal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="javascript:void(0)" id="zoom_meeting_register">
+                    <div class="modal-header px-4">
+                        <h3 class="modal-title" id="exampleModalLabel">Register</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                                                </button>
+                    </div>
+                    <div class="modal-body py-2 px-4">
+                        <p class="d-block">To register and join, please enter your information.</p>
+                        <div class="form-group">
+                            <label for="user_name">Name</label>
+                            <input type="text" class="form-control" id="user_name" name="user_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Email</label>
+                            <input type="text" class="form-control" id="user_email" name="user_email">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Phone</label>
+                            <input type="text" class="form-control" id="user_phone" name="user_phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="brokerage_name">Brokerage Name (If agent)</label>
+                            <input type="text" class="form-control" id="brokerage_name">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark btn-register">Register & Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="vendor/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrapvalidator/bootstrapvalidator.min.js"></script>
+<script type="text/javascript" src="vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="vendor/youtube-video/jquery.mb.YTPlayer.min.js"></script>
+<script type="text/javascript" src="vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/lightslider/dist/js/lightslider.min.js"></script>
+<script type="text/javascript" src="vendor/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="vendor/header-slider/jquery.subtle-slideshow.js"></script>
+<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="scripts/youtube-video.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+
+<script>
+</script>
+
+</html>

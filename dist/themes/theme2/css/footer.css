@@ -1,0 +1,116 @@
+@media (max-width: 767px) {
+    .footer-compass-border {
+        border-right: none !important;
+    }
+    .copy-right {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .footer-h5 {
+        padding-top: 2px !important;
+    }
+}
+
+.footer_section {
+    /*background-image: url("../images/footer_background.png");*/
+    background-color: #000000;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 50%; */
+    /*min-height: 200px;*/
+    padding: 24px 0 15px 0;
+    text-align: center;
+    /* position: relative; */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-padding {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.footer-h5 {
+    color: #e7e8e7;
+    text-transform: capitalize;
+    line-height: normal;
+    font-size: 17px !important;
+    text-align: center;
+}
+
+.footer-border-section {
+    border-bottom: 2px solid #fff;
+    /*margin-top: 5px;*/
+}
+
+.footer-compass-border {
+    border-right: 2px solid #fff;
+    margin-left: 10px;
+}
+
+.footer-contact-border {
+    border-right: 2px solid #fff;
+}
+
+.bottom-footer {
+    padding: 10px 0 0 0;
+}
+
+.bottom-footer h3 {
+    color: #a3a3a3;
+    text-transform: capitalize;
+    font-size: 14px !important;
+    line-height: normal;
+    text-align: left;
+    margin: 5px 0 0;
+}
+
+.bottom-footer p {
+    color: #a3a3a3;
+    line-height: normal;
+    margin: 5px 0 0;
+    font-size: 13px !important;
+}
+
+.logo_div img {
+    max-height: 3rem;
+}
+
+#backTop.black {
+    background: url(../images/uparr_white.png) no-repeat center center rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+}
+
+#backTop {
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    display: none;
+    width: 55px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 4px;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 999999999;
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+#backTop.black:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000;
+    background: url(../images/black.png) no-repeat center center;
+}
+
+@media (min-width:100px) and (max-width:750px){
+    #backTop{
+        display: none !important;
+    }
+}
+@media (min-width: 1250px) {
+    .footer_section {
+        padding: 4px 0 4px 0;
+    }
+}

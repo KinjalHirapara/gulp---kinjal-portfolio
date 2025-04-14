@@ -1,0 +1,344 @@
+.section-topmenuheader {
+    padding: 5px 0 5px 0;
+}
+
+.top-header {
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.logo-img {
+    height: 50px;
+}
+.navbar-brand.logo{
+    min-height: 50px;
+}
+
+@media (max-width: 767px) {
+    .logo-img {
+        height: 40px;
+        margin-top: .25rem !important;
+    }
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+.details_box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: #fff;
+}
+
+/* @keyframes banner-animate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes banner-animate {
+    0% {
+        opacity: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        opacity: 0.3;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    60% {
+        opacity: 0.6;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+    }
+} */
+
+.collapsing {
+    transition: height
+}
+
+.navbar-toggler-btn {
+    float: right;
+    margin-right: 1rem;
+    border-color: #fff !important;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.navbar-nav {
+    margin-right: 0px !important;
+}
+
+.address-section {
+    word-break: break-all;
+}
+
+.details_box h4,
+.details_box h6 {
+    color: white;
+    margin-bottom: unset !important;
+}
+
+@media (max-width: 720px) {
+
+    .details_box {
+        font-size: 16px;
+    }
+
+    .house_details {
+        font-size: 15px
+    }
+}
+
+.owner {
+    display: inline-block;
+    padding: 0 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #303339;
+}
+
+.topmenusection {
+    padding: 2px 0px;
+    display: inline-block;
+}
+
+.container-topheader {
+    margin-top: 56px;
+    background: white;
+    padding: 15px 5%;
+    display: none
+}
+
+@media (max-width:767px) {
+    .header-container {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        position: relative;
+        /* top: -35px; */
+    }
+}
+
+@media (max-width: 861px) and (orientation: portrait) {
+    .navbar-expand-md .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-md .navbar-collapse {
+        display: block !important;
+    }
+
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 785px) and (orientation: portrait) {
+    .agent_data {
+        margin-right: 3rem !important;
+    }
+}
+
+@media (max-width:991px) {
+    .margin-left-right {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .margin-left-right {
+        margin-left: 6.5rem;
+        margin-right: 6.5rem;
+    }
+}
+
+.bg-img {
+    background-image: url("../images/house1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.header-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: block;
+    padding: unset !important;
+}
+
+.nav-item a {
+    color: #656363;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover, .nav-item a:active {
+    color: black;
+    font-weight: 600;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (max-width:767px) {
+    .small-header-logo {
+        width: 100% !important;
+    }
+}
+
+.minus {
+    margin-left: -9.5px;
+    margin-top: -5px;
+    color: inherit;
+    font-size: 20px;
+}
+
+.plus {
+    margin-top: -5px;
+    color: inherit;
+    font-size: 20px;
+    margin-right: -2px;
+}
+
+.lg_plus {
+    margin-top: -3px;
+    color: inherit;
+    font-size: 20px;
+    margin-right: -7px;
+}
+
+.lg_minus {
+    margin-left: -9.5px;
+    margin-top: -4px;
+    color: inherit;
+    font-size: 20px;
+}
+
+.landscape {
+    display: none;
+    font-size: 16px
+}
+
+.portrait {
+    display: block
+}
+
+@media (max-width:767px) and (orientation: landscape) {
+
+    /* code for landscape goes here */
+    .landscape {
+        display: block;
+    }
+
+    .portrait {
+        display: none;
+    }
+    
+    .bottom-left {
+        top: 40%;
+    }
+
+    .bg-img {
+        padding-bottom: 70px;
+    }
+
+    #section-gallery-collection {
+        padding: 55px 0 60px 0 !important;
+    }
+
+    .container-topheader {
+        display: none;
+    }
+}
+
+@media (max-width:767px) and (orientation: portrait) {
+
+    /* code for portrait goes here */
+    .portrait {
+        display: none;
+    }
+
+    .landscape {
+        display: none;
+    }
+
+    .container-topheader {
+        display: block;
+    }
+
+    #section-gallery-collection {
+        padding: 0px !important;
+    }
+}
+
+.add_animation {
+    /* animation-name: banner-animate; */
+    animation-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+@media screen and (orientation: landscape){
+    #collapsibleNavbar{
+        overflow-y: auto !important;
+        max-height: 75vh !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .ipad_details_box {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 0px;
+        color: #fff;
+    }
+
+    .ipad_price_box {
+        background: transparent !important;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    .ipad-header{
+        flex-direction: column !important;
+    }
+    .iPad-show{
+        display: block !important;
+    }
+    .iPad-hide{
+        display: none !important;
+    }
+    .ipad_details_box{
+        background: transparent;
+        margin-left: 0px !important;
+    }
+    .ipad_price_box{
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+}

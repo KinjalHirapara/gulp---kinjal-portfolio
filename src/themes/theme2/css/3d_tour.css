@@ -1,0 +1,62 @@
+@import url('../fonts/Tiempos/TiemposHeadline-Medium.otf');
+.tourpostScroll {
+    margin-top: -110px;
+    position: absolute;
+}
+
+#section-tour {
+    background-color: #ffffff;
+    min-height: 350px;
+    padding: 0;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#section-tour .tour-headlinetitle {
+    padding: 10px 5px;
+}
+
+#section-tour .tour-headlinetitle h1 {
+    padding: 25px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tourvideo_section {
+    width: 100%;
+    height: 0;
+    position: relative; 
+    margin-bottom: 20px;
+    padding-bottom: 57%;
+}
+
+.tourvideo_section iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.tourvideo_section_two{
+    width: 100%;
+    height: 0;
+    position: relative; 
+    margin-bottom: 20px;
+    padding-bottom: 57%;
+    
+}
+.tourvideo_section_two iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+@media  (min-width: 1024px){
+    .tourvideo_section_two{
+        padding-bottom: 35% !important;
+    }
+}

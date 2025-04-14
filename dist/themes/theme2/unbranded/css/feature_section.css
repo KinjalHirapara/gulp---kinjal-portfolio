@@ -1,0 +1,100 @@
+@media (max-width: 767px) {
+    .section-box {
+        padding: 1rem !important;
+    }
+}
+
+.featurepostScroll {
+    margin-top: -90px;
+    position: absolute;
+}
+
+#section-feature {
+    background-color: #ffffff;
+    /* min-height: 550px; */
+    padding: 10px 0 0;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    margin-top: -16px;
+    overflow-x: hidden;
+}
+
+#section-feature .feature-headlinetitle {
+    padding: 10px 5px;
+}
+
+#section-feature .feature-headlinetitle h1 {
+    margin-bottom: 10px;
+}
+
+.section {
+    /* padding: 5rem 1rem; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-box {
+    padding: 5rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.features-wrapper .features-text {
+    max-height: 15rem;
+    -webkit-transition: 0.2s max-height;
+    transition: 0.2s max-height;
+    overflow: hidden;
+}
+
+.features-text-wrap {
+    word-break: break-all;
+}
+
+.features-text {
+    max-height: 15rem;
+    overflow: hidden;
+}
+
+.features-wrapper .features-text p {
+    margin-bottom: 1.5rem;
+}
+
+.features-wrapper.fullvisible .features-text {
+    max-height: none;
+}
+
+.features-wrapper.fullvisible .features-collapse {
+    display: inline-block;
+    padding: 0.5rem .9rem;
+    font-size: 12px;
+}
+
+.features-wrapper .fullvisible .features-collapse:hover {
+    padding: 0.5rem .9rem;
+    font-size: 12px;
+}
+
+.features-wrapper.fullvisible .features-expand {
+    display: none;
+}
+
+.features-wrapper .features-collapse {
+    display: none;
+}
+
+.features-expand .fa-circle:nth-child(1),
+.features-expand .fa-circle:nth-child(2) {
+    margin-right: .15rem!important;
+}
+
+#section-feature {
+    outline: none !important;
+}
+
+.features-text p,
+.features-text span,
+.features-text div {
+    text-indent: initial !important;
+}

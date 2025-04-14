@@ -1,0 +1,109 @@
+.contact-form{
+    border: 1px solid #000000;
+    background-color: rgba(254, 254, 254, 0.5);
+    padding: 30px;
+}
+.group-field, .group-field:focus{
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #707070;
+    border-radius: 0px;
+    background-color: transparent;
+    padding-left: 0px;
+    color: #494949;
+}
+.group-field:focus, .group-field-textarea:focus, 
+.group-field-capcha:focus, .send-message-btn:focus, .send-message-btn:active{  
+    box-shadow: none;
+    outline: none;
+}
+.group-field::placeholder {
+    color: #494949;
+    text-transform: uppercase !important;
+}
+.group-field-textarea, .group-field-textarea:focus{
+    border: 1px solid #707070;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #494949;
+    resize: none;
+}
+.group-field-capcha, .group-field-capcha:focus{
+    border: 1px solid #707070;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #494949;
+}
+.group-field-capcha::placeholder {
+    color: #494949;
+    font-size: 14px;
+}
+.capcha-box{
+    width: 7rem;
+    height: 38px;
+    color: #8b8378;
+    background: #cdc9c9;
+    font-size: 26px;
+}
+.send-message-btn, .send-message-btn:hover, 
+.send-message-btn:focus, .send-message-btn:active,
+.btn-primary:not(:disabled):not(.disabled):active{
+    border-radius: 0px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    outline: none !important;
+    /* user-select: none; */
+    font-size: 16px !important;
+    padding: 0.8rem 1rem;
+}
+.agent-name{
+    color: #4e4949;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+}
+.agent-contact-number, .contact-realtoremail{
+    color: #4e4949;
+}
+@media (max-width:1023px) {
+    .contact-form, .agent-detail-contact{
+        width: 100% !important;
+    }
+}
+.agent-detail-contact{
+    /* padding: 0.6rem; */
+}
+.btn_form {
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1.15rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2px;
+    background-color: #000000 !important;
+    color: #ffffff;
+    background: url(../images/plane_white.png) no-repeat center center rgba(0,0,0,0.8);
+}
+.btn_form:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    background: url(../images/plane_black.png) no-repeat center center rgba(0,0,0,0.8);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

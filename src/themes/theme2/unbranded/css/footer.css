@@ -1,0 +1,33 @@
+#backTop.black {
+    background: url(../images/uparr_white.png) no-repeat center center rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+}
+
+@media (min-width:100px) and (max-width:750px){
+    #backTop{
+        display: none !important;
+    }
+}
+
+#backTop {
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    display: none;
+    width: 55px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 4px;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 999999999;
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+#backTop.black:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000;
+    background: url(../images/black.png) no-repeat center center;
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'HarmoniaSansPro-Regular';
+    src: url('../fonts/Harmonia Sans/HarmoniaSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-SemiBd';
+    src: url('../fonts/Harmonia Sans/HarmoniaSansPro-SemiBd.ttf');
+}
+
+@font-face {
+    font-family: 'TiemposHeadline-Medium';
+    src: url('../fonts/Tiempos/TiemposHeadline-Medium.otf');
+}
+
+@font-face {
+    font-family: 'GT-Pressura-Mono-Regular';
+    src: url('../fonts/GT Pressura Mono Compass/Web/GT-Pressura-Mono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-Bold';
+    src: url('../fonts/Harmonia Sans/HarmoniaSansPro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'HarmoniaSansPro-Light';
+    src: url('../fonts/Harmonia Sans/HarmoniaSansPro-Light.ttf');
+}
+
+@font-face {
+    font-family: 'CompassSans-Regular';
+    src: url('../fonts/Compass Sans/CompassSans-Regular.ttf');
+}
+ @font-face {
+    font-family: 'CompassSans-Bold';
+    src: url('../fonts/Compass Sans/CompassSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../fonts/GothamLight.otf");
+}
+  
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg"), url("../fonts/GothamBook.woff2") format("woff2"), url("../fonts/GothamBook.ttf") format("truetype");
+}
+body, html{
+    font-family: 'Gotham Light';
+}
+.font-style{
+    color: #303339;
+    font-size: 40px;
+    font-family: 'Gotham Light';
+    text-transform: uppercase !important;
+    line-height: normal;
+}
+.help-block {
+    color: #a94442;
+}
+
+.has-error .form-control {
+    border-color: #a94442 !important;
+}
+
+.has-success .form-control {
+    border-color: #3c763d !important;
+}
+
